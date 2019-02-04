@@ -4,9 +4,6 @@ content=$(curl  --silent --header  "User-Agent: Mozilla/5.0 (X11; Linux x86_64) 
  "http://translate.google.com/translate_a/single?client=gtx&ie=UTF-8&oe=UTF-8&dt=bd&dt=ex&dt=ld&dt=md&dt=rw&dt=rm&dt=ss&dt=t&dt=at&dt=gt&dt=qca&sl=auto&tl=ml&hl=emj")
 
 
-# translated_word=(${content//,/ })
-
-# echo $content
 
 IFS=','
 translated_word=($content)
